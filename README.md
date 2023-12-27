@@ -17,33 +17,23 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
 - ...
 
 ```
-/kitti/dataset/
-    └── sequences/
-        ├── 00/
-        │   ├── poses.txt
-        │   ├── image_2/
-        │   ├── image_3/
-        │   ├── labels/
-        │   │   ├ 000000.label
-        │   │   └ 000001.label
-        │   ├── voxels/
-        │   │   ├ 000000.bin
-        │   │   ├ 000000.label
-        │   │   ├ 000000.occluded
-        │   │   ├ 000000.invalid
-        │   │   ├ 000001.bin
-        │   │   ├ 000001.label
-        │   │   ├ 000001.occluded
-        │   │   ├ 000001.invalid
-        │   └── velodyne/
-        │       ├ 000000.bin
-        │       └ 000001.bin
-        ├── 01/
-        ├── 02/
-        .
-        .
-        .
-        └── 21/
+/data/D1/
+    ├── train/
+    │   ├ _classes.csv
+    │   ├ image1.jpg
+    │   ├ image1_mask.png
+    │   ├ image2.jpg
+    │   └ image2_mask.png
+    ├── valid/
+    │   ├ image1.jpg
+    │   ├ image1_mask.png
+    │   ├ image2.jpg
+    │   └ image2_mask.png
+    └── test/
+        ├ image1.jpg
+        ├ image1_mask.png
+        ├ image2.jpg
+        └ image2_mask.png        
 ```
 
 
