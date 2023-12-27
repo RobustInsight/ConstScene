@@ -15,6 +15,34 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
 - `metadata/`: Includes metadata files with additional information.
 - `synthetic/`: Contains synthetically generated images and masks.
 - ...
+/kitti/dataset/
+          └── sequences/
+                  ├── 00/
+                  │   ├── poses.txt
+                  │   ├── image_2/
+                  │   ├── image_3/
+                  │   ├── labels/
+                  │   │     ├ 000000.label
+                  │   │     └ 000001.label
+                  |   ├── voxels/
+                  |   |     ├ 000000.bin
+                  |   |     ├ 000000.label
+                  |   |     ├ 000000.occluded
+                  |   |     ├ 000000.invalid
+                  |   |     ├ 000001.bin
+                  |   |     ├ 000001.label
+                  |   |     ├ 000001.occluded
+                  |   |     ├ 000001.invalid
+                  │   └── velodyne/
+                  │         ├ 000000.bin
+                  │         └ 000001.bin
+                  ├── 01/
+                  ├── 02/
+                  .
+                  .
+                  .
+                  └── 21/
+
 
 For detailed information on dataset structure and annotation format, refer to the [Dataset Documentation](dataset/README.md).
 
