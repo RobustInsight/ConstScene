@@ -15,7 +15,9 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
 - `metadata/`: Includes metadata files with additional information.
 - `synthetic/`: Contains synthetically generated images and masks.
 - ...
-'/kitti/dataset/
+
+```
+/kitti/dataset/
     └── sequences/
         ├── 00/
         │   ├── poses.txt
@@ -42,7 +44,7 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
         .
         .
         └── 21/
-'
+```
 
 
 For detailed information on dataset structure and annotation format, refer to the [Dataset Documentation](dataset/README.md).
