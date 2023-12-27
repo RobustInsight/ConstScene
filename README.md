@@ -18,22 +18,22 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
 
 ```
 /data/D1/
-    ├── train/
-    │   ├ _classes.csv
-    │   ├ image1.jpg
-    │   ├ image1_mask.png
-    │   ├ image2.jpg
-    │   └ image2_mask.png
-    ├── valid/
-    │   ├ image1.jpg
-    │   ├ image1_mask.png
-    │   ├ image2.jpg
-    │   └ image2_mask.png
-    └── test/
-        ├ image1.jpg
-        ├ image1_mask.png
-        ├ image2.jpg
-        └ image2_mask.png        
+        ├── train/
+        │   ├ _classes.csv
+        │   ├ image1.jpg
+        │   ├ image1_mask.png
+        │   ├ image2.jpg
+        │   └ image2_mask.png
+        ├── valid/
+        │   ├ image1.jpg
+        │   ├ image1_mask.png
+        │   ├ image2.jpg
+        │   └ image2_mask.png
+        └── test/
+            ├ image1.jpg
+            ├ image1_mask.png
+            ├ image2.jpg
+            └ image2_mask.png        
 ```
 
 
