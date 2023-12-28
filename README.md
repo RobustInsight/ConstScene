@@ -18,7 +18,7 @@ The ConstScene dataset is available in the `dataset` folder. It includes annotat
 
 ## Dataset
 
-Our semantic segmentation dataset called 'ConstScene' consists of seven distinct classes, addressing various objects commonly found in construction environments. We provide two versions of the dataset to cater to different use cases.
+Our semantic segmentation dataset called `ConstScene` consists of seven distinct classes, addressing various objects commonly found in construction environments. We provide two versions of the dataset to cater to different use cases.
 
 ### Version 1: Original Dataset
 The original version of the dataset includes images captured in diverse weather conditions and environmental settings. Each image is annotated with precise semantic segmentation masks for seven classes: wheel loader machines, personnel, cars, structural elements, and more. This version is suitable for training and evaluating models under realistic scenarios.
