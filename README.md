@@ -71,9 +71,6 @@ Ensure you have the following dependencies installed:
 For more detailed instructions on code usage and customization, refer to the [Code Documentation](code/README.md).
 
 
-## License
-This dataset and code are released under the [MIT License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-
 
 ## Contact
 For questions or inquiries, please contact:
