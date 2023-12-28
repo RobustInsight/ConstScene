@@ -1,5 +1,12 @@
 # ConstScene: A Dataset and Model for Advancing Robust Semantic Segmentation in Construction Environments
 
+
+<p float="left">
+  <img src="assets/orig.jpg" width="50%" />
+  <img src="assets/over.jpg" width="50%" />
+</p>
+
+
 ## Overview
 This repository accompanies the paper "ConstScene: A Dataset and Model for Advancing Robust Semantic Segmentation in Construction Environments" authored by Maghsood Salimi, Mohammad Loni, Sara Afshar, Marjan Sirjani, and Antonio Cicchetti from Mälardalen University and Volvo Construction Equipment.
 
