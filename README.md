@@ -2,8 +2,8 @@
 
 
 <p float="left">
-  <img src="assets/orig.jpg" width="50%" />
-  <img src="assets/over.jpg" width="50%" />
+  <img src="assets/orig.jpg" width="40%" />
+  <img src="assets/over.jpg" width="40%" />
 </p>
 
 
