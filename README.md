@@ -1,9 +1,9 @@
 # ConstScene: A Dataset and Model for Advancing Robust Semantic Segmentation in Construction Environments
 
 
-<p float="center">
-  <img src="assets/orig.jpg" width="40%" />
-  <img src="assets/over.jpg" width="40%" />
+<p float="left">
+  <img src="assets/orig.jpg" width="45%" />
+  <img src="assets/over.jpg" width="45%" />
 </p>
 
 
