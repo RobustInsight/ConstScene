@@ -72,10 +72,8 @@ For more detailed instructions on code usage and customization, refer to the [Co
 
 
 ## License
-This dataset and code are released under the [MIT License](LICENSE).
+This dataset and code are released under the [MIT License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-## Citation
-If you use this dataset or code in your research, please cite our paper. For citation details, refer to [CITATION.md](CITATION.md).
 
 ## Contact
 For questions or inquiries, please contact:
@@ -85,5 +83,12 @@ For questions or inquiries, please contact:
 
 ## Acknowledgments
 This work was conducted in collaboration with the Future Solutions department of Volvo Construction Equipment AB, Sweden. 
+
+## Citation
+If you use this dataset or code in your research, please cite our paper. For citation details, refer to [CITATION.md](CITATION.md).
+
+## License
+
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
 
 
