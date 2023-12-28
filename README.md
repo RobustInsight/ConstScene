@@ -21,7 +21,7 @@ The original version of the dataset includes images captured in diverse weather 
 
 **Download Link:** [Original Dataset](https://drive.google.com/file/d/1Dn5jv8PNX-NHKdkGJ9velyG_4AI--Cz9/view?usp=drive_link)
 
-### Version 2: Augmented Dataset
+### Version 2: Original Dataset Plus Augmented Samples
 To enhance model robustness and performance, we present an augmented version of the dataset. In addition to the original images, this version includes augmented images generated through techniques such as blur, noise, and cut-out. The semantic segmentation masks for the seven classes are meticulously adjusted to match the augmented images.
 
 **Download Link:** [Augmented Dataset](https://drive.google.com/file/d/16VDeLf5lXPz7qkhhddziXXJmjQ2Nyp22/view?usp=drive_link)
