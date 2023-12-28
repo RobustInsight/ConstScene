@@ -27,7 +27,6 @@ To enhance model robustness and performance, we present an augmented version of 
 **Download Link:** [Augmented Dataset](https://drive.google.com/file/d/16VDeLf5lXPz7qkhhddziXXJmjQ2Nyp22/view?usp=drive_link)
 
 
-
 ### Dataset Structure
 ```
 /data/D1/
@@ -50,8 +49,6 @@ To enhance model robustness and performance, we present an augmented version of 
 ```
 
 
-For detailed information on dataset structure and annotation format, refer to the [Dataset Documentation](dataset/README.md).
-
 ## Code
 The code is available in the `code` folder. It includes scripts for training, evaluation, and other relevant tasks.
 
@@ -73,8 +70,6 @@ Ensure you have the following dependencies installed:
 
 For more detailed instructions on code usage and customization, refer to the [Code Documentation](code/README.md).
 
-## Results
-To demonstrate the dataset's utility, we evaluated state-of-the-art object detection algorithms on our proposed benchmark. Detailed results and comparisons can be found in the [Results](results/) folder.
 
 ## License
 This dataset and code are released under the [MIT License](LICENSE).
@@ -86,9 +81,9 @@ If you use this dataset or code in your research, please cite our paper. For cit
 For questions or inquiries, please contact:
 - Maghsood Salimi (maghsood.salimi@mdu.se)
 - Mohammad Loni (mohammad.loni@volvo.com)
-- ...
+
 
 ## Acknowledgments
-We would like to express our gratitude to...
+This work was conducted in collaboration with the Future Solutions department of Volvo Construction Equipment AB, Sweden. 
 
 
