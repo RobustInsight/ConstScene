@@ -16,6 +16,22 @@ The increasing demand for autonomous machines in construction environments neces
 ## Dataset
 The ConstScene dataset is available in the `dataset` folder. It includes annotated images captured under a wide range of weather conditions, such as sunny days, rainy periods, foggy atmospheres, and low-light situations. Additionally, environmental factors like dirt/mud on the camera lens are integrated into the dataset through both actual captures and synthetic generation, simulating complex conditions in construction sites.
 
+## Dataset
+
+Our semantic segmentation dataset called 'ConstScene' consists of seven distinct classes, addressing various objects commonly found in construction environments. We provide two versions of the dataset to cater to different use cases.
+
+### Version 1: Original Dataset
+The original version of the dataset includes images captured in diverse weather conditions and environmental settings. Each image is annotated with precise semantic segmentation masks for seven classes: wheel loader machines, personnel, cars, structural elements, and more. This version is suitable for training and evaluating models under realistic scenarios.
+
+**Download Link:** [Original Dataset](path/to/original_dataset)
+
+### Version 2: Augmented Dataset
+To enhance model robustness and performance, we present an augmented version of the dataset. In addition to the original images, this version includes augmented images generated through techniques such as rotation, scaling, flipping, and color variations. The semantic segmentation masks for the seven classes are meticulously adjusted to match the augmented images.
+
+**Download Link:** [Augmented Dataset](path/to/augmented_dataset)
+
+
+
 ### Dataset Structure
 - `images/`: Contains raw images.
 - `annotations/`: Contains semantic segmentation masks.
