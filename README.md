@@ -50,7 +50,7 @@ To enhance model robustness and performance, we present an augmented version of 
 
 
 ## Code
-The code is available in the `code` folder. It includes scripts for training, evaluation, and other relevant tasks.
+The code is available in the `constscene` folder. It includes scripts for training, evaluation, and other relevant tasks.
 
 ### Dependencies
 Ensure you have the following dependencies installed:
@@ -58,10 +58,41 @@ Ensure you have the following dependencies installed:
 - Instructions on installing dependencies.
 
 ### Usage
-1. **Training:** Train the model using the following command:
-    ```bash
-    python train.py --options
+1. **SegFormer:** To train the Segformer model on your dataset using the `constscene_segformer.py` script, you can use the following command-line arguments:
+
+```bash
+python constscene_segformer.py --epochs 64 \
+                               --model b0 \
+                               -d D1 \
+                               -lr 3e-4 \
+                               -b 300 \
+                               -ih 96 \
+                               -iw 128 \
+                               --feature_size 128
+
     ```
+
+Command-line Arguments:
+--epochs: Number of epochs to train the model (default: 64).
+
+--model: Segformer model architecture, choose between 'b0' or 'b5' (default: 'b0').
+
+-d or --database: Database type, choose between 'D1' (data without augmentation) or 'D2' (data with augmentation).
+
+-lr or --learning_rate: Initial learning rate (default: 3e-4).
+
+-b or --batch_size: Batch size for training (default: 300).
+
+-ih or --input_height: Input images height (default: 96).
+
+-iw or --input_width: Input images width (default: 128).
+
+--feature_size: Feature extractor size (default: 128).
+
+Example:
+Train the Segformer model on the augmented dataset (D2) with a batch size of 300 for 64 epochs:
+
+
 2. **Evaluation:** Evaluate the model's performance with:
     ```bash
     python evaluate.py --options
