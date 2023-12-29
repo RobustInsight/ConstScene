@@ -1,6 +1,6 @@
 from tqdm import tqdm
 from torchvision import transforms
-from tools.prepare_dataset import download_and_unzip
+from Tools.prepare_dataset import download_and_unzip
 from constscene.segmentation_dataset_for_unet import get_loaders
 from torch import nn, optim
 import argparse
@@ -91,14 +91,15 @@ def Main():
     parser.add_argument('-lr', '--learning_rate', default=3e-4, type=float,
                         help='initial learning rate')
 
-    parser.add_argument('-b', '--batch_size', default=1500, type=int,
-                        help='batch size (default: 1500)')
-
     parser.add_argument('-ih', '--input_height', default=96, type=int,
                         help='input images height (default: 96)')
 
     parser.add_argument('-iw', '--input_width', default=128, type=int,
                         help='input images width (default: 28)')
+
+
+    parser.add_argument('-b', '--batch_size', default=1500, type=int,
+                        help='batch size (default: 1500)')
 
     parser.add_argument('-en', '--encoder', default='resnet18', type=str, choices=('resnet18', 'resnet50'),
                         help='model encoder (read unet documents for more encoders. we have tested resnet18 and '
@@ -115,6 +116,9 @@ def Main():
     learning_rate = args.learning_rate
     batch_size = args.batch_size
     encoder = args.encoder
+    input_height = args.input_height
+    input_width = args.input_width
+
     logger.info(f'Command-line arguments: {args}')
 
     seed_everything(args.random_seed)
@@ -130,7 +134,7 @@ def Main():
     start_time = time.time()
 
     img_transform = transforms.Compose([
-        transforms.Resize((args.input_height, args.input_width)),
+        transforms.Resize((input_height, input_width)),
         transforms.ToTensor()
     ])
 
@@ -163,7 +167,8 @@ def Main():
             checkpoint_path = '../saved_checkpoints/unet_' + args.encoder + '_' + args.database + '_' + save_id
             if not os.path.exists(checkpoint_path):
                 os.makedirs(checkpoint_path)
-            torch.save(model.state_dict(), checkpoint_path + '/unet_' + args.encoder + '_' + args.database+'_' + str(epoch) + '.ckpt')
+            torch.save(model.state_dict(),
+                       checkpoint_path + '/unet_' + args.encoder + '_' + args.database + '_' + str(epoch) + '.ckpt')
         loop.set_postfix_str(f"Epoch: {epoch}/{epoch_numbers}, mIoU: {miou * 100:.4f}")
 
     # test
