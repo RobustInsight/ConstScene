@@ -101,12 +101,10 @@ Command-line Arguments:
 - --random_seed: Manual seed for the random number generator (default: 420).
 
 Example:
-Train the Segformer model on the augmented dataset (D2) with a batch size of 300 for 64 epochs:
+Train the U-Net model on the augmented dataset (D2) with a batch size of 300 for 64 epochs:
 ```bash
-python constscene_segformer.py --epochs 64 -d D2 -b 300
+python constscene_unet.py --epochs 64 -d D2 -b 300
 ```
-
-
 
 
 ## Contact
