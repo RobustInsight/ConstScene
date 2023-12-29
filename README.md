@@ -70,7 +70,7 @@ python constscene_segformer.py --epochs 64 \
                                -iw 128 \
                                --feature_size 128
 
-    ```
+```
 
 Command-line Arguments:
 --epochs: Number of epochs to train the model (default: 64).
