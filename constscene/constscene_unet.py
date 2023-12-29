@@ -1,6 +1,6 @@
 from tqdm import tqdm
 from torchvision import transforms
-from Tools.prepare_dataset import download_and_unzip
+from tools.prepare_dataset import download_and_unzip
 from constscene.segmentation_dataset_for_unet import get_loaders
 from torch import nn, optim
 import argparse
