@@ -85,9 +85,7 @@ python constscene_segformer.py --epochs 64 -d D2 -b 300
 2. **U-Net:** To train the U-Net model on your dataset using the `constscene_segformer.py` script, you can use the following command-line arguments:
 
 ```bash
-python constscene_unet.py --epochs 50 -d D1 -lr 3e-4 -b 1500 -ih 96 -iw 128 \
-                          -en resnet18 \
-                          --random_seed 420
+python constscene_unet.py --epochs 50 -d D1 -lr 3e-4 -b 1500 -ih 96 -iw 128 -en resnet18  --random_seed 420
 ```
 
 Command-line Arguments:
@@ -97,9 +95,10 @@ Command-line Arguments:
 - -d or --database: Database type, choose between 'D1' (data without augmentation) or 'D2' (data with augmentation).
 - -lr or --learning_rate: Initial learning rate (default: 3e-4).
 - -b or --batch_size: Batch size for training (default: 300).
+- -en or --encoder: Model encoder, choose between 'resnet18' or 'resnet50' (read U-Net documentation for more encoders; tested with resnet18 and resnet50).
 - -ih or --input_height: Input images height (default: 96).
 - -iw or --input_width: Input images width (default: 128).
-- --feature_size: Feature extractor size (default: 128).
+- --random_seed: Manual seed for the random number generator (default: 420).
 
 Example:
 Train the Segformer model on the augmented dataset (D2) with a batch size of 300 for 64 epochs:
