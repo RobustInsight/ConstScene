@@ -61,14 +61,7 @@ Ensure you have the following dependencies installed:
 1. **SegFormer:** To train the Segformer model on your dataset using the `constscene_segformer.py` script, you can use the following command-line arguments:
 
 ```bash
-python constscene_segformer.py --epochs 64 \
-                               --model b0 \
-                               -d D1 \
-                               -lr 3e-4 \
-                               -b 300 \
-                               -ih 96 \
-                               -iw 128 \
-                               --feature_size 128
+python constscene_segformer.py --epochs 64 --model b0 -d D1 -lr 3e-4 -b 300 -ih 96 -iw 128 --feature_size 128
 
 ```
 
