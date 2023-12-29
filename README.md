@@ -66,7 +66,8 @@ python constscene_segformer.py --epochs 64 --model b0 -d D1 -lr 3e-4 -b 300 -ih 
 ```
 
 Command-line Arguments:
---epochs: Number of epochs to train the model (default: 64).
+
+`-` --epochs: Number of epochs to train the model (default: 64).
 
 --model: Segformer model architecture, choose between 'b0' or 'b5' (default: 'b0').
 
