@@ -8,8 +8,8 @@ import pytorch_lightning as pl
 from torch.utils.data import DataLoader
 from transformers import SegformerImageProcessor
 
-from Tools.prepare_dataset import download_and_unzip
-from Tools.seg_tools import write_text_in_file
+from tools.prepare_dataset import download_and_unzip
+from tools.seg_tools import write_text_in_file
 from constscene.segmentation_dataset_for_segformer import SemanticSegmentationDataset, SegformerFinetuner
 
 
